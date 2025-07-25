@@ -313,14 +313,17 @@
     }
 
     .cta-button.primary {
-        background: linear-gradient(45deg, #ff6b6b, #feca57);
+        background: linear-gradient(45deg, rgba(44, 62, 80, 0.95), rgba(52, 73, 94, 0.95));
         color: white;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .cta-button.primary:hover {
         transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        background: linear-gradient(45deg, rgba(44, 62, 80, 1), rgba(52, 73, 94, 1));
     }
 
     .cta-button.primary:focus {
@@ -359,7 +362,7 @@
     }
 
     .footer-tagline h2 {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
         color: #2c3e50;
         font-weight: bold;
         max-width: 1000px;
@@ -417,7 +420,7 @@
         }
 
         .footer-tagline h2 {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
             padding: 0 1rem;
         }
     }
@@ -453,7 +456,7 @@
         }
 
         .footer-tagline h2 {
-            font-size: 1.8rem;
+            font-size: 1.4rem;
         }
     }
 </style>
