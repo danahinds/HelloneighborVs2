@@ -13,10 +13,9 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
+            <a href="/" class="logo">
                 <img src="/SHNlogo.png" alt="Say Hello Neighbor" class="logo-image">
-                <span class="logo-text">SayHelloNeighbor.org</span>
-            </div>
+            </a>
             
             <div class="nav-menu">
                 <a href="#" class="nav-item active">
@@ -118,20 +117,15 @@
     .logo {
         display: flex;
         align-items: center;
-        gap: 0.5rem;
+        text-decoration: none;
     }
 
     .logo-image {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         object-fit: contain;
     }
 
-    .logo-text {
-        color: #dc3545;
-        font-weight: bold;
-        font-size: 1.1rem;
-    }
 
     .nav-menu {
         display: flex;
