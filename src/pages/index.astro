@@ -10,32 +10,35 @@
     <title>Say Hello Neighbor - Community Care + Technology</title>
 </head>
 <body>
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="/SHNlogo.png" alt="Say Hello Neighbor" class="logo-image">
+            <a href="/" class="logo" aria-label="Say Hello Neighbor - Go to homepage">
+                <img src="/SHNlogo.png" alt="Say Hello Neighbor logo - Community Care + Technology" class="logo-image">
             </a>
             
             <div class="nav-menu">
-                <a href="#" class="nav-item active">
-                    <div class="nav-icon"><img src="/homeicon.png" alt="Home" class="nav-icon-img"></div>
+                <a href="#" class="nav-item active" aria-label="Home - Current page" aria-current="page">
+                    <div class="nav-icon"><img src="/homeicon.png" alt="" class="nav-icon-img" role="presentation"></div>
                     <span>Home</span>
                 </a>
-                <a href="#" class="nav-item">
-                    <div class="nav-icon"><img src="/serviceIcon.png" alt="Services" class="nav-icon-img"></div>
+                <a href="#" class="nav-item" aria-label="Services - View our services">
+                    <div class="nav-icon"><img src="/serviceIcon.png" alt="" class="nav-icon-img" role="presentation"></div>
                     <span>Services</span>
                 </a>
-                <a href="#" class="nav-item">
-                    <div class="nav-icon"><img src="/ImpactIcon.png" alt="Impact" class="nav-icon-img"></div>
+                <a href="#" class="nav-item" aria-label="Impact - See our community impact">
+                    <div class="nav-icon"><img src="/ImpactIcon.png" alt="" class="nav-icon-img" role="presentation"></div>
                     <span>Impact</span>
                 </a>
-                <a href="#" class="nav-item">
-                    <div class="nav-icon"><img src="/partners.png" alt="Work With Us" class="nav-icon-img"></div>
+                <a href="#" class="nav-item" aria-label="Work With Us - Partnership opportunities">
+                    <div class="nav-icon"><img src="/partners.png" alt="" class="nav-icon-img" role="presentation"></div>
                     <span>Work With Us</span>
                 </a>
-                <a href="#" class="nav-item">
-                    <div class="nav-icon"><img src="/ourstory.png" alt="About" class="nav-icon-img"></div>
+                <a href="#" class="nav-item" aria-label="About - Learn about our story">
+                    <div class="nav-icon"><img src="/ourstory.png" alt="" class="nav-icon-img" role="presentation"></div>
                     <span>About</span>
                 </a>
             </div>
@@ -43,7 +46,7 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="main-content">
+    <main class="main-content" id="main-content" role="main">
         <div class="content-container">
             <!-- Hero Message -->
             <div class="hero-message">
@@ -52,17 +55,17 @@
             </div>
 
             <!-- Simple Stats -->
-            <div class="simple-stats">
+            <div class="simple-stats" role="region" aria-label="Our impact statistics">
                 <div class="stat-item">
-                    <span class="stat-number">160</span>
+                    <span class="stat-number" aria-label="One hundred sixty">160</span>
                     <span class="stat-label">Care kits distributed</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">1</span>
+                    <span class="stat-number" aria-label="One">1</span>
                     <span class="stat-label">App in production</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">1</span>
+                    <span class="stat-number" aria-label="One">1</span>
                     <span class="stat-label">Organization supported</span>
                 </div>
             </div>
@@ -70,16 +73,16 @@
             <!-- Call to Action -->
             <div class="simple-cta">
                 <div class="cta-buttons">
-                    <a href="#partner" class="cta-button primary">Partner With Us</a>
-                    <a href="#support" class="cta-button secondary">Support Our Mission</a>
+                    <a href="#partner" class="cta-button primary" aria-label="Partner With Us - Learn about partnership opportunities">Partner With Us</a>
+                    <a href="#support" class="cta-button secondary" aria-label="Support Our Mission - Ways to help our organization">Support Our Mission</a>
                 </div>
             </div>
         </div>
     </main>
 
     <!-- Footer Tagline -->
-    <footer class="footer-tagline">
-        <h1>Connecting Neighbors : Support Communities : Spreading Love!</h1>
+    <footer class="footer-tagline" role="contentinfo">
+        <h2>Connecting Neighbors : Support Communities : Spreading Love!</h2>
     </footer>
 </body>
 
@@ -96,6 +99,24 @@
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+    }
+
+    /* Skip Link for Screen Readers */
+    .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 6px;
+        background: #000;
+        color: #fff;
+        padding: 8px;
+        text-decoration: none;
+        border-radius: 0 0 4px 4px;
+        z-index: 1000;
+        font-weight: bold;
+    }
+
+    .skip-link:focus {
+        top: 0;
     }
 
     /* Navigation */
@@ -145,6 +166,19 @@
 
     .nav-item:hover {
         background-color: #f8f9fa;
+    }
+
+    /* Focus indicators for accessibility */
+    .nav-item:focus {
+        outline: 3px solid #0066cc;
+        outline-offset: 2px;
+        background-color: #f0f8ff;
+    }
+
+    .logo:focus {
+        outline: 3px solid #0066cc;
+        outline-offset: 2px;
+        border-radius: 4px;
     }
 
     .nav-item.active span {
@@ -218,7 +252,7 @@
 
     .hero-subtitle {
         font-size: 1.4rem;
-        color: #555;
+        color: #333;
         line-height: 1.6;
         max-width: 700px;
         margin: 0 auto;
@@ -247,7 +281,7 @@
 
     .stat-label {
         font-size: 1.1rem;
-        color: #666;
+        color: #444;
         font-weight: 500;
     }
 
@@ -284,10 +318,16 @@
         box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
     }
 
+    .cta-button.primary:focus {
+        outline: 3px solid #fff;
+        outline-offset: 2px;
+        transform: translateY(-2px);
+    }
+
     .cta-button.secondary {
         background: white;
-        color: #333;
-        border: 2px solid #ddd;
+        color: #222;
+        border: 2px solid #666;
         box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
 
@@ -295,6 +335,13 @@
         background: #f8f9fa;
         transform: translateY(-3px);
         box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .cta-button.secondary:focus {
+        outline: 3px solid #0066cc;
+        outline-offset: 2px;
+        border-color: #0066cc;
+        transform: translateY(-2px);
     }
 
     /* Footer Tagline */
@@ -330,7 +377,7 @@
         }
 
         .nav-item span {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
         }
 
         .main-content {
@@ -384,7 +431,7 @@
         }
 
         .nav-item span {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
         }
 
         .hero-message h1 {
