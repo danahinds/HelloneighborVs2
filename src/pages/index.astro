@@ -14,7 +14,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <div class="logo-icon">♡</div>
+                <img src="/SHNlogo.png" alt="Say Hello Neighbor" class="logo-image">
                 <span class="logo-text">SayHelloNeighbor.org</span>
             </div>
             
@@ -121,16 +121,10 @@
         gap: 0.5rem;
     }
 
-    .logo-icon {
-        background-color: #333;
-        color: white;
+    .logo-image {
         width: 40px;
         height: 40px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.2rem;
+        object-fit: contain;
     }
 
     .logo-text {
