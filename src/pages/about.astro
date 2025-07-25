@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Us - Non-Profit Organization">
+  <div class="about-container">
+    <h1>About Us</h1>
+    
+    <section class="mission">
+      <h2>Our Mission</h2>
+      <p>We are dedicated to making a positive impact in our community through various outreach programs, educational initiatives, and support services. Our organization believes in the power of collective action to create lasting change.</p>
+    </section>
+    
+    <section class="values">
+      <h2>Our Values</h2>
+      <div class="values-grid">
+        <div class="value-item">
+          <h3>Compassion</h3>
+          <p>We approach every situation with empathy and understanding.</p>
+        </div>
+        <div class="value-item">
+          <h3>Integrity</h3>
+          <p>We maintain the highest ethical standards in all our actions.</p>
+        </div>
+        <div class="value-item">
+          <h3>Community</h3>
+          <p>We believe in the strength that comes from working together.</p>
+        </div>
+        <div class="value-item">
+          <h3>Impact</h3>
+          <p>We focus on creating meaningful, lasting change.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="history">
+      <h2>Our Story</h2>
+      <p>Founded with a vision to serve our community, our organization has grown from a small group of dedicated volunteers to a thriving network of changemakers. We continue to evolve and adapt our services to meet the changing needs of those we serve.</p>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .about-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .value-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+  }
+  
+  .value-item h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .value-item p {
+    font-size: 1rem;
+    margin: 0;
+  }
+</style>

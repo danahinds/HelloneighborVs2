@@ -1,0 +1,419 @@
+---
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say Hello Neighbor - Community Care + Technology</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">♡</div>
+                <span class="logo-text">SayHelloNeighbor.org</span>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#" class="nav-item active">
+                    <div class="nav-icon">🏠</div>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon">⚙️</div>
+                    <span>Services</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon">📊</div>
+                    <span>Impact</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon">🤝</div>
+                    <span>Work With Us</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon">ℹ️</div>
+                    <span>About</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- Hero Message -->
+            <div class="hero-message">
+                <h1>Community Care + Technology</h1>
+                <p class="hero-subtitle">Since 2023, we support communities with direct care programs and partner with nonprofits to build custom apps that amplify their impact.</p>
+            </div>
+
+            <!-- Simple Stats -->
+            <div class="simple-stats">
+                <div class="stat-item">
+                    <span class="stat-number">160</span>
+                    <span class="stat-label">Care kits distributed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">App in production</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Organization supported</span>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="simple-cta">
+                <div class="cta-buttons">
+                    <a href="#partner" class="cta-button primary">Partner With Us</a>
+                    <a href="#support" class="cta-button secondary">Support Our Mission</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Tagline -->
+    <footer class="footer-tagline">
+        <h1>Connecting Neighbors : Support Communities : Spreading Love!</h1>
+    </footer>
+</body>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Navigation */
+    .navbar {
+        background-color: white;
+        padding: 1rem 0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .logo-icon {
+        background-color: #333;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+
+    .logo-text {
+        color: #dc3545;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    .nav-menu {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+        padding: 0.5rem;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-item:hover {
+        background-color: #f8f9fa;
+    }
+
+    .nav-item.active {
+        border-bottom: 2px solid #333;
+    }
+
+    .nav-icon {
+        font-size: 1.5rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .nav-item span {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    /* Main Content */
+    .main-content {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 2rem;
+        background: linear-gradient(135deg, 
+            #ff6b6b 0%, 
+            #feca57 15%, 
+            #ff9ff3 30%, 
+            #48dbfb 45%, 
+            #54a0ff 60%, 
+            #ff6b6b 75%, 
+            #feca57 90%, 
+            #48dbfb 100%);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .main-content::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.4);
+        z-index: 1;
+    }
+
+    .content-container {
+        max-width: 1000px;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Hero Message */
+    .hero-message {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .hero-message h1 {
+        font-size: 3.2rem;
+        font-weight: bold;
+        color: #2c3e50;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.4rem;
+        color: #555;
+        line-height: 1.6;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    /* Simple Stats */
+    .simple-stats {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        margin-bottom: 4rem;
+        flex-wrap: wrap;
+    }
+
+    .stat-item {
+        text-align: center;
+    }
+
+    .stat-number {
+        display: block;
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: #ff6b6b;
+        margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+        font-size: 1.1rem;
+        color: #666;
+        font-weight: 500;
+    }
+
+    /* Simple CTA */
+    .simple-cta {
+        text-align: center;
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .cta-button {
+        padding: 1.2rem 2.5rem;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+        display: inline-block;
+    }
+
+    .cta-button.primary {
+        background: linear-gradient(45deg, #ff6b6b, #feca57);
+        color: white;
+        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    }
+
+    .cta-button.primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+    }
+
+    .cta-button.secondary {
+        background: white;
+        color: #333;
+        border: 2px solid #ddd;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .cta-button.secondary:hover {
+        background: #f8f9fa;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Footer Tagline */
+    .footer-tagline {
+        background-color: white;
+        padding: 2.5rem 2rem;
+        text-align: center;
+        margin-top: auto;
+        border-top: 1px solid #e9ecef;
+    }
+
+    .footer-tagline h1 {
+        font-size: 2.2rem;
+        color: #2c3e50;
+        font-weight: 600;
+        max-width: 1000px;
+        margin: 0 auto;
+        line-height: 1.4;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .nav-container {
+            flex-direction: column;
+            gap: 1rem;
+            padding: 0 1rem;
+        }
+
+        .nav-menu {
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-item span {
+            font-size: 0.8rem;
+        }
+
+        .main-content {
+            padding: 2rem 1rem;
+        }
+
+        .hero-message h1 {
+            font-size: 2.4rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+        }
+
+        .simple-stats {
+            gap: 2rem;
+        }
+
+        .stat-number {
+            font-size: 2.8rem;
+        }
+
+        .cta-buttons {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .cta-button {
+            width: 100%;
+            max-width: 280px;
+        }
+
+        .footer-tagline h1 {
+            font-size: 1.8rem;
+            padding: 0 1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .nav-menu {
+            gap: 0.5rem;
+        }
+
+        .nav-item {
+            padding: 0.25rem;
+        }
+
+        .nav-icon {
+            font-size: 1.2rem;
+        }
+
+        .nav-item span {
+            font-size: 0.7rem;
+        }
+
+        .hero-message h1 {
+            font-size: 2rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+        }
+
+        .simple-stats {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .footer-tagline h1 {
+            font-size: 1.4rem;
+        }
+    }
+</style>
+</html>
