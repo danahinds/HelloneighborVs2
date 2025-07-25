@@ -19,11 +19,11 @@
             
             <div class="nav-menu">
                 <a href="#" class="nav-item active">
-                    <div class="nav-icon">🏠</div>
+                    <div class="nav-icon"><img src="/homeicon.png" alt="Home" class="nav-icon-img"></div>
                     <span>Home</span>
                 </a>
                 <a href="#" class="nav-item">
-                    <div class="nav-icon">⚙️</div>
+                    <div class="nav-icon"><img src="/ImpactIcon.png" alt="Services" class="nav-icon-img"></div>
                     <span>Services</span>
                 </a>
                 <a href="#" class="nav-item">
@@ -154,6 +154,15 @@
     .nav-icon {
         font-size: 1.5rem;
         margin-bottom: 0.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-icon-img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
     }
 
     .nav-item span {
