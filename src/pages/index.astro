@@ -48,14 +48,16 @@
     <!-- Main Content -->
     <main class="main-content" id="main-content" role="main">
         <div class="content-container">
-            <!-- Hero Message -->
-            <div class="hero-message">
-                <h1>Community Care + Technology</h1>
-                <p class="hero-subtitle">Since 2023, we support communities with direct care programs and partner with nonprofits to build custom apps that amplify their impact.</p>
-            </div>
+            <!-- Combined Messaging Box -->
+            <div class="messaging-box">
+                <!-- Hero Message -->
+                <div class="hero-message">
+                    <h1>Community Care + Technology</h1>
+                    <p class="hero-subtitle">Since 2023, we support communities with direct care programs and partner with nonprofits to build custom apps that amplify their impact.</p>
+                </div>
 
-            <!-- Simple Stats -->
-            <div class="simple-stats" role="region" aria-label="Our impact statistics">
+                <!-- Simple Stats -->
+                <div class="simple-stats" role="region" aria-label="Our impact statistics">
                 <div class="stat-item">
                     <span class="stat-number" aria-label="One hundred sixty">160</span>
                     <span class="stat-label">Care kits distributed</span>
@@ -67,6 +69,7 @@
                 <div class="stat-item">
                     <span class="stat-number" aria-label="One">1</span>
                     <span class="stat-label">Organization supported</span>
+                </div>
                 </div>
             </div>
 
@@ -226,16 +229,21 @@
         z-index: 2;
     }
 
+    /* Combined Messaging Box */
+    .messaging-box {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 3rem;
+        border-radius: 20px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 3rem;
+    }
+
     /* Hero Message */
     .hero-message {
         text-align: center;
         margin-bottom: 3rem;
-        background: rgba(255, 255, 255, 0.95);
-        padding: 2.5rem;
-        border-radius: 15px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .hero-message h1 {
@@ -259,14 +267,8 @@
         display: flex;
         justify-content: center;
         gap: 4rem;
-        margin-bottom: 4rem;
+        margin-bottom: 0;
         flex-wrap: wrap;
-        background: rgba(255, 255, 255, 0.92);
-        padding: 2rem;
-        border-radius: 15px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .stat-item {
@@ -291,12 +293,6 @@
     /* Simple CTA */
     .simple-cta {
         text-align: center;
-        background: rgba(255, 255, 255, 0.90);
-        padding: 2rem;
-        border-radius: 15px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .cta-buttons {
@@ -319,7 +315,7 @@
     .cta-button.primary {
         background: linear-gradient(45deg, #ff6b6b, #feca57);
         color: white;
-        box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     }
 
     .cta-button.primary:hover {
@@ -337,7 +333,7 @@
         background: white;
         color: #222;
         border: 2px solid #666;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     }
 
     .cta-button.secondary:hover {
